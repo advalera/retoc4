@@ -57,7 +57,7 @@ class OfferCard extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(4.0),
                 child: Icon(
-                  Icons.architecture,
+                  Icons.person,
                   color: primaryColor,
                 ),
               ),

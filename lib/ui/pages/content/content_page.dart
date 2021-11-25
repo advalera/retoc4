@@ -46,7 +46,7 @@ class _State extends State<ContentPage> {
     return Scaffold(
       appBar: CustomAppBar(
         picUrl: 'https://uifaces.co/our-content/donated/gPZwCbdS.jpg',
-        tile: const Text("Red Egresados"),
+        tile: const Text("Compra de Artículos"),
         context: context,
         // ---------------------------------------
         // 1. Implementa el metodo onSignOff para redirigir a la ruta de autenticación
@@ -77,7 +77,7 @@ class _State extends State<ContentPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.public_outlined),
-            label: 'Verificado',
+            label: 'ArteWeb',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.place_outlined),

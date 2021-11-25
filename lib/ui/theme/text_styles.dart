@@ -12,7 +12,7 @@ class AppTextStyle {
 
   // Headline 1
   static TextStyle get headline1 => GoogleFonts.openSans(
-        fontSize: 18.0,
+        fontSize: 28.0,
         fontWeight: FontWeight.w700,
       );
   // Headline 2

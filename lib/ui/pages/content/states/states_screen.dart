@@ -10,7 +10,7 @@ class StatesScreen extends StatefulWidget {
 }
 
 class _State extends State<StatesScreen> {
-  final items = List<String>.generate(20, (i) => "Item $i");
+  final items = List<String>.generate(20, (i) => "Estado $i");
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +18,8 @@ class _State extends State<StatesScreen> {
       itemCount: items.length,
       itemBuilder: (context, index) {
         return StateCard(
-          title: 'Iony Houst',
-          content: 'Lorem ipsum dolor sit amet.',
+          title: items[index],
+          content: 'El ${items[index]} Lorem ipsum dolor sit amet.',
           picUrl: 'https://uifaces.co/our-content/donated/gPZwCbdS.jpg',
           onChat: () => {},
         );

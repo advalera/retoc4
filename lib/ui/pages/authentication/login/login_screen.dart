@@ -16,6 +16,7 @@ class _State extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    bool _isObscure = true;
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -25,7 +26,7 @@ class _State extends State<LoginScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              "Iniciar sesión",
+              "Entra a Tu Cuenta",
               style: Theme.of(context).textTheme.headline1,
             ),
           ),
@@ -43,11 +44,20 @@ class _State extends State<LoginScreen> {
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: passwordController,
-              obscureText: true,
+              obscureText: _isObscure,
               obscuringCharacter: "*",
-              decoration: const InputDecoration(
+              decoration: InputDecoration(
                 border: OutlineInputBorder(),
                 labelText: 'Clave',
+                suffixIcon: IconButton(
+                  onPressed: () {
+                    setState(() {
+                      _isObscure = !_isObscure;
+                    });
+                  }, 
+                  icon: Icon(
+                    _isObscure ? Icons.visibility : Icons.visibility_off
+                  )),
               ),
             ),
           ),

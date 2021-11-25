@@ -26,7 +26,7 @@ class _State extends State<SignUpScreen> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: Text(
-              "Creación de usuario",
+              "Regístrate",
               style: Theme.of(context).textTheme.headline1,
             ),
           ),
@@ -78,6 +78,7 @@ class _State extends State<SignUpScreen> {
               ),
             ],
           ),
+          const Text('Si ya tienes una cuenta, da clic aquí'),
           TextButton(
             onPressed: widget.onViewSwitch,
             child: const Text("Entrar"),
